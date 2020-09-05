@@ -11,6 +11,7 @@ $.getJSON("https://jsonplaceholder.typicode.com/todos/1",function(data){
    });
 
 
+/*
 var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -21,6 +22,19 @@ var settings = {
 		"x-rapidapi-key": "81bfa7cea3msh3a936871961fd35p1fab28jsnddd4cea08d73"
 	}
 }
+*/
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/qu/quote/MSFT",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
+		"x-rapidapi-key": "81bfa7cea3msh3a936871961fd35p1fab28jsnddd4cea08d73"
+	}
+}
+
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
